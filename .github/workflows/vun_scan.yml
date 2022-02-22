@@ -13,9 +13,9 @@ jobs:
     steps:
       - name: Check out develop
         uses: actions/checkout@v2
-
-      - name: Security vulnerabilities scan
-        uses: aufdenpunkt/python-safety-check@develop
         with:
           ref: develop
+
+      - name: Security vulnerabilities scan
+        uses: aufdenpunkt/python-safety-check@main
         
