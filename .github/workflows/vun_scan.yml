@@ -1,5 +1,4 @@
 name: Python safety check
-
 on:
   schedule:
     - cron: '*/5 * * * *'
@@ -18,4 +17,3 @@ jobs:
 
       - name: Security vulnerabilities scan
         uses: aufdenpunkt/python-safety-check@main
-        
